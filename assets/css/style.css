@@ -1814,9 +1814,11 @@ textarea::-moz-placeholder {
     max-width: 270px;
     margin-left: 5px;
 }
-.label_wrapper .label{
+
+.label_wrapper .label {
     display: none;
 }
+
 .goods_left_main_breadcrumbs {
     margin: 0 auto;
     max-width: 1170px;
@@ -3490,17 +3492,18 @@ textarea::-moz-placeholder {
     display: flex;
     justify-content: space-between;
 }
-.nav_slider_payment_list .black_payment{
-    background-color: #282828!important;
+
+.nav_slider_payment_list .black_payment {
+    background-color: #282828 !important;
 }
-.nav_slider_payment_list .black_payment p{
-    color: #FFFFFF!important;
+
+.nav_slider_payment_list .black_payment p {
+    color: #FFFFFF !important;
 }
+
 .nav_slider_payment_list .slick-list {
     padding: 8px 0 !important;
 }
-
-
 
 .nav_slider_payment_item {
     display: flex !important;
@@ -3514,7 +3517,6 @@ textarea::-moz-placeholder {
     min-height: 137px !important;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-
 
 .nav_slider_payment_item:last-child {
     background-color: #427ad7;
@@ -3608,6 +3610,329 @@ textarea::-moz-placeholder {
 
 .under_main_slider_payment_list p {
     padding-top: 41px;
+}
+
+.payment_methods {
+    margin-top: 85px;
+}
+
+.payment_methods p {
+    font-weight: 300;
+    color: #1d1d1d;
+}
+
+.payment_methods p > span {
+    font-weight: 300;
+    color: #1d1d1d;
+}
+
+.payment_methods .img_wrapper {
+    display: flex;
+    margin: 10px -2px;
+    flex-wrap: wrap;
+    max-width: 700px;
+}
+
+.payment_methods .img_wrapper div {
+    padding: 2px;
+}
+
+.payment_methods > div {
+    padding-bottom: 28px;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.payment_methods .title_payment {
+    font-size: 20px;
+    color: #427ad7;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.payment_methods .no_bold {
+    margin-top: 30px;
+}
+
+.payment_methods .title_payment_bold {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1d1d1d;
+    margin-top: 30px;
+}
+
+.payment_methods .make_credit {
+    display: flex;
+    justify-content: center;
+}
+
+.payment_methods .make_credit button {
+    padding: 10px 25px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #427ad7;
+}
+
+/*Гарантийное обслуживание */
+.garant_main_wrapper {
+    background-color: #f1f1f1;
+}
+
+.garant_main_wrapper_block {
+    max-width: 1170px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+}
+
+.garant_main_wrapper .card_blocks_title {
+    margin-bottom: -10px;
+}
+
+.garant_block {
+    border-bottom: 1px solid #c8c8c8;
+    padding: 26px 0;
+}
+
+.garant_block_title {
+    display: flex;
+}
+
+.garant_block_title p {
+    position: relative;
+    color: #427ad7;
+    font-weight: 700;
+    font-size: 20px;
+    padding-right: 40px;
+}
+
+.garant_block_title p:after {
+    content: "\f105";
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: absolute;
+    top: -1px;
+    right: 14px;
+    color: #427ad7;
+    font-family: FontAwesome;
+    font-size: 30px;
+}
+
+.garant_block_title.garant_title_hide p:after {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: 3px;
+    right: 12px;
+}
+
+.garant_block_content {
+    padding-top: 20px;
+    margin: -15px 0;
+}
+
+.garant_block_content p {
+    font-weight: 300;
+    color: #1d1d1d;
+}
+
+.garant_row {
+    padding: 15px 0;
+}
+
+.garant_block_content .garant_link {
+    font-weight: 700;
+    font-size: 16px;
+    color: #427ad7;
+}
+
+.garant_block_content .garant_bold {
+    font-weight: 700;
+    color: #1d1d1d;
+    text-decoration: none;
+}
+
+/*Форма на возврат товара*/
+.form_main_wrapper {
+    background-color: #f1f1f1;
+}
+
+.form_main_wrapper_block {
+    max-width: 1170px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+}
+
+.form_wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+.form_inner {
+    max-width: 460px;
+
+}
+
+.form_inner input {
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 1px solid #646464;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #646464;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 10px 0;
+    outline: none;
+    padding: 0 10px;
+}
+
+.form_inner input::-webkit-input-placeholder {
+    color: #646464;
+}
+
+.form_inner input::-moz-placeholder {
+    color: #646464;
+}
+
+.form_inner input:-moz-placeholder {
+    color: #646464;
+}
+
+.form_inner input:-ms-input-placeholder {
+    color: #646464;
+}
+
+.form_inner textarea::-webkit-input-placeholder {
+    color: #646464;
+}
+
+.form_inner textarea::-moz-placeholder {
+    color: #646464;
+}
+
+.form_inner textarea:-moz-placeholder {
+    color: #646464;
+}
+
+.form_inner textarea:-ms-input-placeholder {
+    color: #646464;
+}
+
+.form_inner textarea {
+    width: 100%;
+    min-height: 120px;
+    outline: none;
+    border: none;
+    background-color: #dcdcdc;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 15px 0;
+    padding: 0 10px;
+}
+
+.form_inner p label {
+    font-weight: 300;
+    color: #1d1d1d;
+    font-size: 16px;
+
+}
+
+.form_inner p input {
+    width: auto;
+    margin-right: 4px;
+    margin-left: 15px;
+}
+
+.form_inner .submit_form {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.form_inner button {
+    background-color: #427ad7;
+    color: #FFFFFF;
+    padding: 12px 45px;
+    -webkit-border-radius: 5px;
+    outline: none;
+    border: none;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.form_inner p {
+    margin: 12px 0;
+}
+
+[name="return"]:checked,
+[name="return"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+[name="return"]:checked + label,
+[name="return"]:not(:checked) + label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+
+[name="return"]:checked + label:before,
+[name="return"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 2px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+
+[name="return"]:checked + label:after,
+[name="return"]:not(:checked) + label:after {
+    content: '';
+    width: 11px;
+    height: 11px;
+    background: #427ad7;
+    position: absolute;
+    top: 4.5px;
+    left: 11px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+[name="return"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+[name="return"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 @media (max-width: 1024px ) {
@@ -4022,8 +4347,6 @@ textarea::-moz-placeholder {
         transition: all 0.3s;
     }
 
-
-
     .goods_left_menu_main_sales:after, .goods_left_menu_main_second:after, .goods_left_menu_main_first:after {
         display: none;
     }
@@ -4038,9 +4361,10 @@ textarea::-moz-placeholder {
         margin-top: 10px
     }
 
-    .goods_left_menu_main_sales li a{
+    .goods_left_menu_main_sales li a {
         margin-left: 10px;
     }
+
     .goods_main_content_cards .wrapper_card_of_the_goods {
         width: 47%;
     }
@@ -4290,15 +4614,17 @@ textarea::-moz-placeholder {
     .delivery_slide_first {
         flex-direction: column;
     }
-    .card_of_the_goods .price_goods.installment_active .price_at_the_discount{
+
+    .card_of_the_goods .price_goods.installment_active .price_at_the_discount {
         white-space: nowrap;
     }
 }
 
 @media (max-width: 415px) {
-    .goods_main_content_cards .wrapper_card_of_the_goods{
+    .goods_main_content_cards .wrapper_card_of_the_goods {
         width: 100%;
     }
+
     .insurance {
         align-items: center;
         padding-left: 15px;
