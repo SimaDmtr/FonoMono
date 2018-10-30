@@ -1,22 +1,22 @@
 $(document).ready(function () {
-                                //Слайдер дсотавка
+    //Слайдер дсотавка
     $('.delivery_slides').slick({
-        useCSS:true
+        useCSS: true
     });
-                                //
+    //
 
 
-                                //Триггер кнопки каталог
-    $(".label").click(function() {
-        if($('.label_wrapper').hasClass("show")){
+    //Триггер кнопки каталог
+    $(".label").click(function () {
+        if ($('.label_wrapper').hasClass("show")) {
             $('.label_wrapper').removeClass("show")
-        } else{
+        } else {
             $('.label_wrapper').addClass("show")
         }
     });
-                                //
+    //
 
-                                //слайдеры "Оплата"
+    //слайдеры "Оплата"
     $('.main_slider_payment_wrapper').slick({
         slidesToShow: 1,
         infinite: false,
@@ -30,19 +30,17 @@ $(document).ready(function () {
         draggable: false,
         swipe: false,
         touchMove: false,
-        asNavFor:'.main_slider_payment_wrapper'
+        asNavFor: '.main_slider_payment_wrapper'
     });
-                                //
+    //
 
-                                // синхронизация слайдеров
-    $('.main_slider_payment_wrapper').on('swipe', function(event, slick, direction){
-        if($(this).slick('slickCurrentSlide') === 0){
+    // синхронизация слайдеров
+    $('.main_slider_payment_wrapper').on('swipe', function (event, slick, direction) {
+        if ($(this).slick('slickCurrentSlide') === 0) {
             $('.pay_card').addClass('black_payment').siblings().removeClass('black_payment');
-        }else
-        if($(this).slick('slickCurrentSlide') === 1 ){
+        } else if ($(this).slick('slickCurrentSlide') === 1) {
             $('.courier_pay').addClass('black_payment').siblings().removeClass('black_payment');
-        }else
-        if($(this).slick('slickCurrentSlide') === 2){
+        } else if ($(this).slick('slickCurrentSlide') === 2) {
             $('.bank_pay').addClass('black_payment').siblings().removeClass('black_payment');
         }
     });
@@ -51,42 +49,40 @@ $(document).ready(function () {
     })
 
     $('.main_slider_payment_wrapper .slick-arrow').click(function () {
-        if($('.main_slider_payment_wrapper').slick('slickCurrentSlide') === 0){
+        if ($('.main_slider_payment_wrapper').slick('slickCurrentSlide') === 0) {
             $('.pay_card').addClass('black_payment').siblings().removeClass('black_payment');
-        }else
-        if($('.main_slider_payment_wrapper').slick('slickCurrentSlide') === 1 ){
+        } else if ($('.main_slider_payment_wrapper').slick('slickCurrentSlide') === 1) {
             $('.courier_pay').addClass('black_payment').siblings().removeClass('black_payment');
-        }else
-        if($('.main_slider_payment_wrapper').slick('slickCurrentSlide') === 2){
+        } else if ($('.main_slider_payment_wrapper').slick('slickCurrentSlide') === 2) {
             $('.bank_pay').addClass('black_payment').siblings().removeClass('black_payment');
         }
     })
     //
 
-                                //якорь наверх страницы
+    //якорь наверх страницы
     $('body').append('<img id="go-top" src="assets/img/icons/up.png" alt="">');
-    $(function() {
-        $.fn.scrollToTop = function() {
+    $(function () {
+        $.fn.scrollToTop = function () {
             $(this).hide().removeAttr("href");
             if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
             var scrollDiv = $(this);
-            $(window).scroll(function() {
+            $(window).scroll(function () {
                 if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
                 else $(scrollDiv).fadeIn("slow")
             });
-            $(this).click(function() {
+            $(this).click(function () {
                 $("html, body").animate({scrollTop: 0}, "slow")
             })
         }
     });
 
-    $(function() {
+    $(function () {
         $("#go-top").scrollToTop();
     });
-                                //
+    //
 
 
-                                //Слайдеры на главной
+    //Слайдеры на главной
     $('.slider').slick({
         slidesToShow: 1,
         responsive: [
@@ -103,48 +99,59 @@ $(document).ready(function () {
         slidesToShow: 1,
         arrows: true
     });
-                                //
+    //
 
-                                //Удаление блоков на табах
+    //Удаление блоков на табах
     $('#sets_tab').click(function () {
-        $('.more_services').css({display:'block'})
+        $('.more_services').css({display: 'block'})
     });
     $('#about_tab').click(function () {
-        $('.more_services').css({display:'block'})
+        $('.more_services').css({display: 'block'})
     });
     $('#stabs_tab').click(function () {
-        $('.more_services').css({display:'none'})
+        $('.more_services').css({display: 'none'})
     });
     $('#feedbacks_tab').click(function () {
-        $('.more_services').css({display:'block'})
+        $('.more_services').css({display: 'block'})
     });
     $('#video_tabs').click(function () {
-        $('.more_services').css({display:'none'})
+        $('.more_services').css({display: 'none'})
     });
     $('#analogs_tab').click(function () {
-        $('.more_services').css({display:'block'})
+        $('.more_services').css({display: 'block'})
     });
     $('#present_tab').click(function () {
-        $('.more_services').css({display:'none'})
+        $('.more_services').css({display: 'none'})
     });
-                                //
+    //
 
-                                //Слайдеры на карточе товара
+    //Слайдеры на карточе товара
     $('.focus_photo_wrapper').slick({
         slidesToShow: 1,
-        arrows:false,
+        arrows: false,
         slidesToScroll: 1,
         fade: true,
     })
     $('.card_photo_mini_wrapper').slick({
         slidesToShow: 5,
         asNavFor: '.focus_photo_wrapper',
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 1279,
+                settings: {
+                    slidesToShow: 4,
+                    infinite: true,
+                    dots: true,
+                    arrows: false
+                }
+            }
+        ]
     })
 
-                                //
+    //
 
-                                //Табы товаров
+    //Табы товаров
     $('.tab-content').hide();
     $('.tab-content:first').show();
     $('.tabItem:first').addClass('active_main_tab');
@@ -157,9 +164,9 @@ $(document).ready(function () {
         $(selectTab).fadeIn();
         return false;
     });
-                                //
+    //
 
-                                //табы товаров кнопки вперед назад
+    //табы товаров кнопки вперед назад
     $('.change').click(function () {
         let tabs = $('.active_main_tab');
         let visibleTab = $('.tabs-container :visible').first();
@@ -184,18 +191,18 @@ $(document).ready(function () {
         $("html, body").animate({scrollTop: 300}, 850);
 
     });
-                                //адаптив ховера
-    $(".btn").click(function() {
-        if($('.second_header_adaptive').hasClass("show")){
+    //адаптив ховера
+    $(".btn").click(function () {
+        if ($('.second_header_adaptive').hasClass("show")) {
             $('.second_header_adaptive').removeClass("show")
-        } else{
+        } else {
             $('.second_header_adaptive').addClass("show")
         }
     });
 
-                                //табы карточки
+    //табы карточки
     $(".tab_item").not(":first").hide(300);
-    $(".card_tabs_wrapper_nav .card_tabs_wrapper_nav_item").click(function() {
+    $(".card_tabs_wrapper_nav .card_tabs_wrapper_nav_item").click(function () {
         $(".card_tabs_wrapper_nav_item a").eq($(this).index()).addClass("active");
         $(this).addClass('underline')
         $(this).siblings().removeClass('underline')
@@ -204,47 +211,157 @@ $(document).ready(function () {
     }).eq(0).addClass("active");
 
 
-                                //Фильтр
+    //Фильтр
+    if ($(window).width() < 991) {
+        $('.filter_title').addClass('filter_active').siblings().slideUp()
+    }
     $('.sort_and_filter .filter').click(function () {
-        $(this).css({
-            color: '#ffffff',
-            background: "#12b425",
-            border: "1px solid #12b425",
 
-        });
-        $('.sort_and_filter .filter .lines div').css({
-            background: "#ffffff"
-        })
+        if ($('.filters_list').hasClass("active")) {
+            $('.filters_list').removeClass("active");
+        } else {
+            $('.filters_list').addClass("active");
+        }
     });
     var mainAccord = $('.filters_list .filter_title');
-    mainAccord.click(function() {
-        if($(this).hasClass("filter_active")){
+    mainAccord.click(function () {
+        if ($(this).hasClass("filter_active")) {
             $(this).removeClass("filter_active").siblings().slideDown();
-        } else{
+        } else {
             $(this).addClass("filter_active").siblings().slideUp();
         }
     });
 
+//Аккордеон гарантии
+    $('.garant_block_title').addClass("garant_title_hide").siblings().slideUp()
+    var accordGarant = $('.garant_block_title');
+    accordGarant.click(function () {
+        if ($(this).hasClass("garant_title_hide")) {
+            $(this).removeClass("garant_title_hide").siblings().slideDown();
+        } else {
+            $(this).addClass("garant_title_hide").siblings().slideUp();
+        }
+    });
+    //Слайдеры на карточке товара
 
-                        //Слайдеры на карточке товара
-
-    $('#analogs_tab').click(  function () {
+    $('#analogs_tab').click(function () {
         $('.cards_tab_wrapper_analogs').slick({
             slidesToShow: 4,
+            responsive: [
+                {
+                    breakpoint: 1279,
+                    settings: {
+                        slidesToShow: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        slidesToShow: 2,
+                        infinite: true,
+                        dots: true
+
+                    }
+                },
+                {
+                    breakpoint: 750,
+                    settings: {
+                        slidesToShow: 1,
+                        infinite: true,
+                        dots: true
+
+                    }
+                }
+            ]
         })
-
-
     });
+    $('.you_was_seen_content').slick({
+        slidesToShow: 4,
+        responsive: [
+            {
+                breakpoint: 1279,
+                settings: {
+                    slidesToShow: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 2,
+                    infinite: true,
+                    dots: true
 
+                }
+            },
+            {
+                breakpoint: 750,
+                settings: {
+                    slidesToShow: 1,
+                    infinite: true,
+                    dots: true
+
+                }
+            }
+
+        ]
+    })
     $('.change_color_wrapper').slick({
         slidesToShow: 5,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 1279,
+                settings: {
+                    slidesToShow: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 5,
+                    infinite: true,
 
+                }
+            },
+
+        ]
     });
+    $('.card_tabs_wrapper_content').slick({
+        infinite: false,
+        slidesToShow: 5,
+        responsive: [
+            {
+                breakpoint: 1279,
+                settings: {
+                    slidesToShow: 4,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 3,
+                    dots: true
 
+                }
+            },
+            {
+                breakpoint: 750,
+                settings: {
+                    slidesToShow: 2,
+                    dots: true
+                }
+            }
+        ]
+    })
     $('.you_was_seen_content').slick({
         slidesToShow: 4,
         infinite: false
-
     })
-
 });
