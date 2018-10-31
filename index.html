@@ -20,6 +20,83 @@
 
 </head>
 <body>
+<div class="modal">
+    <div class="auth">
+        <div class="modal_title">
+            <div class="line"></div>
+            <p>Вход</p>
+            <div class="line"></div>
+        </div>
+        <div class="with_fonomono">
+            <p class="auth_title">Через аккаунт FonoMono</p>
+            <form action="" id="login_fono_form">
+                <input placeholder="Ваш e-mail" type="email" required>
+                <input placeholder="Ваш пароль" type="password" required>
+                <a class="forgot_password" href="#">забыли пароль</a>
+            </form>
+        </div>
+        <div class="with_fonomono_buttons">
+            <button class="create_fonomono_profile">Создать аккаунт</button>
+            <button form="login_fono_form" class="login_fonomono_profile">Войти</button>
+        </div>
+        <div class="line"></div>
+        <div class="with_social">
+            <p class="auth_title">Через социальные сети</p>
+            <div class="with_social_buttons">
+                <button class="login_vk"><img src="assets/img/icons/vk(1).png" alt="">Вконтакте</button>
+                <button class="login_facebook"><img src="assets/img/icons/facebook-app-logo.png" alt="">Facebook
+                </button>
+                <button class="login_google"><img src="assets/img/icons/google.png" alt="">Google</button>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="close_modal">
+            <button class="close">Закрыть</button>
+        </div>
+    </div>
+    <div class="forgot_modal">
+        <div class="modal_title">
+            <div class="line"></div>
+            <p>Восстановление пароля</p>
+            <div class="line"></div>
+        </div>
+        <form class="forgot_mail_input" id="forgot_mail_input">
+            <input placeholder="Ваш e-mail" type="email" required>
+        </form>
+        <div class="forgot_mail_text">
+            <p>Укажите адрес эл. почты, который вы использовали при<br>оформлении заказов в FonoMono. Мы вышлем вам
+                инструкцию<br>
+                по восстановлению пароля</p>
+        </div>
+        <div class="forgot_mail_button">
+            <button form="forgot_mail_input">Восстановить пароль</button>
+        </div>
+        <div class="close_modal">
+            <button class="close">Закрыть</button>
+        </div>
+    </div>
+    <div class="register">
+        <div class="modal_title">
+            <div class="line"></div>
+            <p>Создать аккаунт</p>
+            <div class="line"></div>
+        </div>
+        <div class="with_fonomono">
+            <form action="" id="with_fonomono_form">
+                <input placeholder="Ваш e-mail" type="email" required>
+                <input placeholder="Ваш пароль" type="password" required>
+                <input placeholder="Повторите пароль" type="password" required>
+                <input placeholder="Ваше имя" type="text" required>
+            </form>
+        </div>
+        <div class="register_button">
+            <button form="with_fonomono_form">Зарегистрироваться</button>
+        </div>
+        <div class="close_modal">
+            <button class="close">Закрыть</button>
+        </div>
+    </div>
+</div>
 <div class="second_header_adaptive">
     <div class="btn">
         <div class="one"></div>
@@ -95,14 +172,14 @@
 
             <div class="account">
                 <div class="active_account">
-                    <a class="personal_area" href="#">Личный<br> кабинет</a>
+                    <a class="personal_area" href="cabinet.html">Личный<br> кабинет</a>
                     <a class="basket" href="#">
                         <img src="assets/img/header/Слой_1.png" alt="#">
                         <span class="amount_products">3</span>
                     </a>
                 </div>
                 <div class="sign_in_account">
-
+                    <a href="#">Войти на сайт</a>
                 </div>
             </div>
         </div>
@@ -1283,8 +1360,8 @@
                         <form action="">
                             <div>
                                 <input type="text" placeholder="Ваше имя" required>
-                                <input type="text" placeholder="Номер вашего телефона" required>
-                                <input type="text" placeholder="Ваш e-mail" required>
+                                <input id="phone_question" type="text" placeholder="Номер вашего телефона" required>
+                                <input type="email" placeholder="Ваш e-mail" required>
                             </div>
 
                             <div>
@@ -1292,10 +1369,11 @@
                                           placeholder="Вопрос можно задать в данной форме" required></textarea>
                             </div>
 
-                            <input type="submit" name="Отправить">
+                            <input id="submit_question" type="submit" name="Отправить">
                         </form>
-                    </div>
 
+                    </div>
+                    <p class="question_accept">Мы с Вами скоро свяжемся</p>
                     <p class="personal_inform">*нажимая кнопку "Отправить",<br> вы даете свое согласие на обработку
                         персональных данных. <a href="">Условия политики конфиденциальности.</a></p>
                 </div>
@@ -1509,8 +1587,8 @@
     </div>
 </footer>
 <!---->
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="assets/js/jquery-1.11.0.min.js"></script>
+<script src="assets/js/jquery.maskedinput.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="assets/js/script.js"></script>
 </body>

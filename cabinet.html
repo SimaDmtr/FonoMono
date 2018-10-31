@@ -16,8 +16,7 @@
           rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-
-
+    <link rel="stylesheet" href="assets/css/date.css">
 </head>
 <body>
 <div class="modal">
@@ -227,226 +226,61 @@
 </header>
 
 <div class="wrapper_main">
-    <div class="payment_main_wrapper">
+    <div class="cabinet_main_wrapper">
         <div class="goods_left_main_breadcrumbs">
-            <p><a href="index.html">Главная</a>/<a href="payment.html">Оплата</a></p>
+            <p><a href="index.html">Главная</a>/<a href="cabinet.html">Личный кабинет</a></p>
         </div>
-        <div class="payment_main_wrapper_block">
-            <div class="nav_slider_payment">
-                <div class="card_blocks_title">
-                    <div class="line"></div>
-                    <h3>Оплата</h3>
-                    <div class="line"></div>
-                </div>
-                <div class="nav_slider_payment_list">
-                    <div class="nav_slider_payment_item pay_card black_payment">
-                        <div class="nav_slider_payment_item_image">
-                            <img src="assets/img/icons/online-shop.png" alt="">
-                        </div>
-                        <p>Онлайн<br>(банковской картой)</p>
-                    </div>
-                    <div class="nav_slider_payment_item courier_pay">
-                        <div class="nav_slider_payment_item_image">
-                            <img src="assets/img/icons/delivery-man.png" alt="">
-                        </div>
-                        <p>Наличными курьеру</p>
-                    </div>
-                    <div class="nav_slider_payment_item bank_pay">
-                        <div class="nav_slider_payment_item_image">
-                            <img src="assets/img/icons/bank-account.png" alt="">
-                        </div>
-                        <p>Счет в банке</p>
-                    </div>
-                    <div class="nav_slider_payment_item invisLink">
-                        <a id="credit_anchor" href="#credit"></a>
-                        <div class="nav_slider_payment_item_image">
-                            <img src="assets/img/icons/auction_payment.png" alt="">
-                        </div>
-                        <p>Кредит/рассрочка</p>
-                    </div>
-
-                </div>
+        <div class="cabinet_main_wrapper_block">
+            <div class="cab_left">
+                <div class="my_orders left_item">
+                    <div><img src="assets/img/icons/shopping-basket.png" alt=""></div>
+                    <p>Мои заказы</p></div>
+                <div class="my_data left_item">
+                    <div><img src="assets/img/icons/file.png" alt=""></div>
+                    <p>Мои данные</p></div>
             </div>
-            <div class="main_slider_payment_wrapper">
-                <div class="main_slider_payment first_slide_payment">
+            <div class="line"></div>
+            <div class="cab_right">
+                <div class="order_tab cab_tab active">
                     <div class="card_blocks_title">
-                        <h3>Название этого слайда №1</h3>
+                        <div class="line"></div>
+                        <h3>Ваши заказы</h3>
+                        <div class="line"></div>
                     </div>
-                    <div class="main_slider_payment_list">
-                        <div class="main_slider_payment_item">
-                            <img src="assets/img/icons/student.png" alt="">
-                            <p>Покупатель</p>
-                        </div>
-                        <div class="main_slider_payment_item arrow_payment">
-                            <div><img src="assets/img/icons/arrow_payment.png" alt=""></div>
-                        </div>
-                        <div class="main_slider_payment_item">
-                            <img src="assets/img/icons/online-shop_payment.png" alt="">
-                            <p>Интернет-магазин</p>
-                        </div>
-                        <div class="main_slider_payment_item arrow_payment">
-                            <div><img src="assets/img/icons/arrow_payment.png" alt=""></div>
-                        </div>
-                        <div class="main_slider_payment_item">
-                            <img src="assets/img/icons/cashbox(1).png" alt="">
-                            <p>Онлайн-касса</p>
-                        </div>
-                        <div class="main_slider_payment_item arrow_payment">
-                            <div><img src="assets/img/icons/arrow_payment.png" alt=""></div>
-                        </div>
-                        <div class="main_slider_payment_item">
-                            <img src="assets/img/icons/cloud.png" alt="">
-                            <p>ОФД</p>
-                        </div>
-                    </div>
-                    <div class="under_main_slider_payment_list_wrapper ">
-                        <div class="under_main_slider_payment_list first_arrow"><img src="assets/img/icons/arrow_under.png" alt="">
-                            <p>Отправка чека покупателю</p></div>
+                    <div class="order_content">
+                        <p class="sad">Вы пока еще ничего не заказали <img
+                                src="assets/img/icons/sad-face-in-rounded-square.png" alt=""></p>
+                        <p class="order_content_text">Чтобы сделать заказ на нашем сайте просто выберите товар,<br>
+                            положите его в корзину и заполните короткую форму.</p>
                     </div>
                 </div>
-                <div class="main_slider_payment second_slide_payment">
+                <div class="user_data_tab cab_tab">
                     <div class="card_blocks_title">
-                        <h3>Название этого слайда №2</h3>
+                        <div class="line"></div>
+                        <h3>Ваши данные</h3>
+                        <div class="line"></div>
                     </div>
-                    <div class="main_slider_payment_list">
-                        <div class="main_slider_payment_item">
-                            <img src="assets/img/icons/student.png" alt="">
-                            <p>Покупатель</p>
+                    <form class="data_content">
+                        <div class="data_content_left">
+                            <input type="text" placeholder="Фамилия">
+                            <input type="text" placeholder="Имя">
+                            <input type="text" placeholder="Отчество">
+                            <input type="tel" placeholder="Телефон">
+                            <p>E-mail: <span>example@mail.ru</span></p>
+                            <button class="change_pasword">Сменить пароль</button>
+                            <button class="save_data" type="submit">Сохранить</button>
                         </div>
-                        <div class="main_slider_payment_item arrow_payment">
-                            <div><img src="assets/img/icons/arrow_payment.png" alt=""></div>
+                        <div class="data_content_right">
+                            <div class="birthday_sex">
+                                <p>Дата рождения:</p>
+                                <input type='text' class="datepicker-here " data-position="right top" placeholder="День/Месяц/Год"/>
+                                <p class="sex_title">Пол:</p>
+                                <div class="change_sex">
+                                <input type="radio" placeholder="Мужской" value="male" name="sex" id="male"><label class="sex" for="male">Мужской</label>
+                                <input type="radio" placeholder="Женский" value="female" name="sex" id="female"><label class="sex" for="female">Женский</label></div>
+                            </div>
                         </div>
-                        <div class="main_slider_payment_item">
-                            <img src="assets/img/icons/online-shop_payment.png" alt="">
-                            <p>Интернет-магазин</p>
-                        </div>
-                        <div class="main_slider_payment_item arrow_payment">
-                            <div><img src="assets/img/icons/arrow_payment.png" alt=""></div>
-                        </div>
-                        <div class="main_slider_payment_item">
-                            <img src="assets/img/icons/delivery-man_payment.png" alt="">
-                            <p>Служба доставки</p>
-                        </div>
-                    </div>
-                    <div class="under_main_slider_payment_list_wrapper ">
-                        <div class="under_main_slider_payment_list second_arrow"><img
-                                src="assets/img/icons/arrow_under.png" alt="">
-                            <p>Выписывает покупателю</div>
-                    </div>
-                </div>
-                <div class="main_slider_payment third_slide_payment">
-                    <div class="card_blocks_title">
-                        <h3>Название этого слайда №3</h3>
-                    </div>
-                    <div class="main_slider_payment_list">
-                        <div class="main_slider_payment_item">
-                            <img src="assets/img/icons/student.png" alt="">
-                            <p>Покупатель</p>
-                        </div>
-                        <div class="main_slider_payment_item arrow_payment">
-                            <div><img src="assets/img/icons/arrow_payment.png" alt=""></div>
-                        </div>
-                        <div class="main_slider_payment_item">
-                            <img src="assets/img/icons/online-shop_payment.png" alt="">
-                            <p>Интернет-магазин</p>
-                        </div>
-                        <div class="main_slider_payment_item arrow_payment">
-                            <div><img src="assets/img/icons/arrow_payment.png" alt=""></div>
-                        </div>
-                        <div class="main_slider_payment_item">
-                            <img src="assets/img/icons/bank-account_payment.png" alt="">
-                            <p>Онлайн-касса</p>
-                        </div>
-
-                    </div>
-                    <div class="under_main_slider_payment_list_wrapper">
-                        <div class="under_main_slider_payment_list third_arrow"><img
-                                src="assets/img/icons/arrow_under.png" alt="">
-                            <p>Покупатель идет в банк со счетом и оплачивает его</p></div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="payment_methods">
-                <div class="moscow_payment">
-                    <p class="title_payment">Жители Москвы и МО могут оплатить инструмент:</p>
-                    <div>
-                        <p class="title_payment_bold">- Наличными курьеру.</p>
-                        <p>Оплата производится по факту доставки товара.</p>
-                    </div>
-                    <div>
-                        <p class="title_payment_bold">- Наличными в офисе. </p>
-                        <p>Оплата производится наличными в нашем Бэк-офисе по адресу : 121087, г. Москва,<br>
-                            ул. Барклая, д. 6, стр. 5, офис 23К1</p>
-                    </div>
-                    <div>
-                        <p class="title_payment_bold">- Онлайн <span>(банковской картой)</span></p>
-                        <div class="img_wrapper">
-                            <div><img src="assets/img/icons/01.png" alt=""></div>
-                            <div><img src="assets/img/icons/02.png" alt=""></div>
-                            <div><img src="assets/img/icons/03.png" alt=""></div>
-                            <div><img src="assets/img/icons/04.png" alt=""></div>
-                        </div>
-                        <p class="description_moscow">*Как клиенты из Москвы/МО ,так и из
-                            регионов+Казахстана+Белорусии+Крыма могут оплатить заказы банковскими картами<br>
-                            любых банков-эмитентов, главное чтобы карты были платёжных систем, указанных выше. </p>
-                    </div>
-                </div>
-                <div class="sng_payment">
-                   <p class="title_payment">Жители любого города России, а также Белоруссии
-                        и Казахстана могут оплатить инструмент:</p>
-                    <div>
-                        <p class="title_payment_bold">- По выставленному счету через банк</p>
-                        <p>В этом случае вам высылается счет на электронную почту, распечатав его, вы можете совершить
-                            оплату в любом банке.</p>
-                    </div>
-                    <div>
-                        <p class="title_payment_bold">- Через сайт</p>
-                        <p>Вы можете произвести оплату без комиссии прямо на сайте через формы на этой странице:<br>
-                            Перед оплатой свяжитесь с нашим менеджером и получите подтверждение на заказ.</p>
-                    </div>
-                </div>
-                <div class="credit">
-                    <p class="title_payment"><a id="credit"></a>Кредит/рассрочка</p>
-                    <div class="no_bold">
-                        <p>- В Кредит (для РФ)</p>
-                        <p>- В Рассрочку (для РФ)</p>
-                    </div>
-                    <div class="img_wrapper">
-                        <div><img src="assets/img/icons/05.png" alt=""></div>
-                        <div><img src="assets/img/icons/06.png" alt=""></div>
-                        <div><img src="assets/img/icons/07.png" alt=""></div>
-                        <div><img src="assets/img/icons/08.png" alt=""></div>
-                        <div><img src="assets/img/icons/09.png" alt=""></div>
-                        <div><img src="assets/img/icons/10.png" alt=""></div>
-                        <div><img src="assets/img/icons/11.png" alt=""></div>
-                        <div><img src="assets/img/icons/12.png" alt=""></div>
-                        <div><img src="assets/img/icons/13.png" alt=""></div>
-                    </div>
-                    <div class="make_credit"><button>Подать заявку</button></div>
-                </div>
-                <div class="get_docs">
-                    <p class="title_payment">При покупке товара вы получаете следующие документы:</p>
-                    <div>
-                        <p>- Товарный чек</p>
-                        <p>- Гарантийный талон</p>
-                    </div>
-                    <div>
-                        <p class="title_payment_bold">А также, в зависимости от выбранного способа оплаты:</p>
-                        <p>- Чек терминала по оплате банковской картой (при оплате банковской картой курьеру)</p>
-                        <p>- Квитанция банка - выдаётся банком (при оплате по выставленному счету через банк)</p>
-                        <p>- Кредитный договор - выдаётся банком (при оплате в кредит/рассрочку)</p>
-                        <p>- Онлайн-чек сервиса Яндекс.Касса о проведении платежа (при оплате через сайт)</p>
-                    </div>
-                </div>
-                <div class="no_cash">
-                    <p class="title_payment">Безналичный расчет для юридических лиц:</p>
-                    <div class="no_bold">
-                        <p>- Оригинал счета</p>
-                        <p>- Типовой договор</p>
-                        <p>- Полный комплект бухгалтерских документов</p>
-                    </div>
-
+                    </form>
                 </div>
             </div>
         </div>
@@ -571,6 +405,8 @@
 </footer>
 <script src="assets/js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="assets/js/date.js"></script>
 <script src="assets/js/script.js"></script>
+
 </body>
 </html>
