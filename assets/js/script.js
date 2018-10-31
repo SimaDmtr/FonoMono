@@ -364,4 +364,71 @@ $(document).ready(function () {
         slidesToShow: 4,
         infinite: false
     })
+    //Модальные окна
+    $('.sign_in_account').click(function () {
+        $('.modal').fadeIn().css("display", "flex");
+        $('.close').click(function () {
+            $('.auth').addClass('active').siblings().removeClass('active');
+            $('.modal').fadeOut(0);
+        })
+        $('.auth').addClass('active');
+        $('.forgot_password').click(function () {
+            $('.auth').removeClass('active');
+            $('.forgot_modal').addClass('active')
+        });
+        $('.create_fonomono_profile').click(function () {
+            $('.register').addClass('active').siblings().removeClass('active')
+        })
+        $(document).mouseup(function (e) {
+            var container = $(".modal");
+            if (container.has(e.target).length === 0) {
+                $('.auth').addClass('active').siblings().removeClass('active');
+                container.fadeOut(0);
+            }
+        });
+    })
+    //табы лк
+    $(".cab_tab").not(":first").hide(300);
+    $(".left_item").click(function () {
+        $(this).addClass('active')
+        $(this).siblings().removeClass('active')
+        $(".cab_tab").hide().eq($(this).index()).fadeIn()
+    }).eq(0).addClass("active");
+            //переключение пола
+    $('.sex').click(function () {
+        if ($(this).hasClass("active")) {
+            $(this).removeClass("active");
+        } else {
+            $(this).addClass("active");
+            $(this).siblings().removeClass("active");
+        }
+    })
+    $("#credit_anchor").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+                window.location.hash = hash;
+            });
+        }
+    });
+
+    //Форма вопроса
+    $('#phone_question').mask("+375(99)999-99-99", {autoclear: false});
+    $('#submit_question').click(function () {
+        if ($('.contacts form')[0].checkValidity()) {    //прошло валидацию
+            $('.contacts').css("display", "none");
+            $('.question_accept').fadeIn();
+            return false
+        } else {
+            //не прошло валидацию
+        }
+    });
+
+
+
+
+
 });
