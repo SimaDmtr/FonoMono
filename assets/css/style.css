@@ -3274,10 +3274,15 @@ textarea::-moz-placeholder {
     width: 50%;
     font-weight: 700;
     color: #1d1d1d;
+    word-break: break-all;
+    -ms-word-break: break-all;
 }
 
 .cards_tab_wrapper_stats p + p {
     font-weight: 300;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    padding-left: 5px;
 }
 
 .cards_tab_wrapper_stats div:not(.line) {
@@ -4523,8 +4528,8 @@ textarea::-moz-placeholder {
         max-width: 186px;
     }
 
-    .buy_buttons button {
-        width: 100% !important;
+    .card_info_wrapper .buy_buttons button {
+        width: 100%;
         margin: 7px 5px 0 0;
     }
 
@@ -4878,6 +4883,9 @@ textarea::-moz-placeholder {
 }
 
 @media (max-width: 768px) {
+    .card_info_wrapper .buy_buttons button {
+        width: 48%;
+    }
     .second_arrow {
         width: 62%;
     }
@@ -4951,11 +4959,11 @@ textarea::-moz-placeholder {
     }
 
     .buy_set_button {
-        margin-right: 8px;
+        margin-right: 28px;
     }
 
     .card_tabs_wrapper .make_own_set button {
-        margin-right: 8px;
+        margin-right: 28px;
     }
 
     .more_services .more_services_item_title p:after {
@@ -5067,7 +5075,7 @@ textarea::-moz-placeholder {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 481px) {
 
     .with_social_buttons button{
         width: 48%;
@@ -5499,7 +5507,43 @@ textarea::-moz-placeholder {
     }
 
 }
+@media (max-width: 426px) {
+    .payment_methods .img_wrapper{
+        margin: 0;
+    }
+    .card_tabs_wrapper_nav_item .line{
+        width: 85px;
+    }
+    .why_us{
+        display: none;
+    }
+    .change_color_wrapper {
+        width: 375px;
+    }
+    #tabs-6, .wrapper_for_effect {
+        width: 389px;
+    }
 
+    .focus_photo_wrapper {
+        width: 384px;
+        height: 384px;
+    }
+
+    .card_wrapper .card_photo_slider .focus_photo {
+        height: 384px;
+    }
+
+    .card_wrapper .card_photo_slider .card_photo_mini_wrapper {
+        width: 384px;
+    }
+
+    .cards_tab_wrapper_analogs {
+        max-width: 346px;
+    }
+    .card_tabs_wrapper_content {
+        max-width: 366px;
+    }
+}
 @media (max-width: 415px) {
 
     .change_color_wrapper {
@@ -5564,7 +5608,53 @@ textarea::-moz-placeholder {
     }
 }
 
-@media (max-width: 320px) {
+
+@media (max-width: 376px) {
+    .why_us{
+        display: block;
+    }
+    .change_color_wrapper {
+        width: 335px;
+    }
+
+    #tabs-6, .wrapper_for_effect {
+        width: 340px;
+        margin: 0 0 0 -3px;
+        padding-bottom: 50px;
+    }
+
+    .focus_photo_wrapper {
+        width: 320px;
+        height: 320px;
+    }
+
+    .card_wrapper .card_photo_slider .focus_photo {
+        height: 320px;
+    }
+
+    .card_wrapper .card_photo_slider .card_photo_mini_wrapper {
+        width: 320px;
+    }
+
+    .cards_tab_wrapper_analogs {
+        max-width: 297px;
+    }
+
+    .card_tabs_wrapper_content {
+        max-width: 317px;
+    }
+
+}
+@media (max-width: 321px) {
+    .status_at_this_time .action.active{
+        max-width: 75px;
+    }
+    .status_at_this_time .bounty.active{
+        max-width: 75px;
+    }
+    .status_at_this_time .new_goods.active{
+        max-width: 75px;
+    }
     .auth, .forgot_modal, .register{
         max-width: 264px;
     }
