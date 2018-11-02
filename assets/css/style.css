@@ -5076,7 +5076,43 @@ textarea::-moz-placeholder {
 }
 
 @media (max-width: 481px) {
+    .data_content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .data_content_right{
+        margin: 20px 0 0 0
+    }
+    .cab_right .cab_tab{
+        margin: 20px 0 0 0;
+    }
+    .cab_right{
+        margin: 0;
+        width: 90%;
+    }
+    .cab_left{
+        align-self: flex-start;
+        width: 90%;
+    }
 
+    .data_content_left{
+        max-width: 80%;
+        order: 2;
+    }
+    .data_content_left .change_pasword{
+        align-self: center;
+    }
+    .data_content_left .save_data{
+        align-self: center;
+        margin-bottom: 30px;
+    }
+    .cabinet_main_wrapper_block>.line{
+        display: none;
+    }
+    .cabinet_main_wrapper_block{
+        flex-direction: column;
+        align-items: center;
+    }
     .with_social_buttons button{
         width: 48%;
     }
