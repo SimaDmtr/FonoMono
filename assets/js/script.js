@@ -387,7 +387,7 @@ $(document).ready(function () {
             }
         });
     })
-    //табы лк
+                //табы лк
     $(".cab_tab").not(":first").hide(300);
     $(".left_item").click(function () {
         $(this).addClass('active')
