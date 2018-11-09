@@ -95,11 +95,15 @@ $(document).ready(function () {
             }
         ]
     });
-    $('.stock_slide_block').slick({
-        slidesToShow: 1,
-        arrows: true
+    //Слайдеры "о нас"
+    $('.cert_about').slick({
+        slidesToShow: 3,
+    });
+    $('.partners_logo_wrapper').slick({
+        slidesToShow: 3,
     });
     //
+
 
     //Удаление блоков на табах
     $('#sets_tab').click(function () {
@@ -426,7 +430,6 @@ $(document).ready(function () {
             //не прошло валидацию
         }
     });
-
 
 
 
