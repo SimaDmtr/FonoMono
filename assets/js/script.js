@@ -95,12 +95,56 @@ $(document).ready(function () {
             }
         ]
     });
+    $('.stock_slide_block').slick({
+        slidesToShow: 1
+    })
     //Слайдеры "о нас"
     $('.cert_about').slick({
         slidesToShow: 3,
+        responsive: [
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 2,
+                    infinite: true,
+                    dots: true,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 481,
+                settings: {
+                    slidesToShow: 1,
+                    infinite: true,
+                    dots: true,
+                    arrows: false
+                }
+            }
+        ]
     });
     $('.partners_logo_wrapper').slick({
         slidesToShow: 3,
+        responsive: [
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 2,
+                    infinite: true,
+                    dots: true,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 481,
+                settings: {
+                    slidesToShow: 1,
+                    infinite: true,
+                    dots: true,
+                    arrows: false
+                }
+            }
+        ],
+
     });
     //
 
@@ -419,7 +463,15 @@ $(document).ready(function () {
         }
     });
 
-    //Форма вопроса
+
+
+
+
+
+
+
+
+//Форма вопроса
     $('#phone_question').mask("+375(99)999-99-99", {autoclear: false});
     $('#submit_question').click(function () {
         if ($('.contacts form')[0].checkValidity()) {    //прошло валидацию
@@ -430,8 +482,5 @@ $(document).ready(function () {
             //не прошло валидацию
         }
     });
-
-
-
 
 });
