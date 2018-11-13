@@ -16,8 +16,7 @@
           rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-
-
+    <link rel="stylesheet" href="assets/css/date.css">
 </head>
 <body>
 <div class="modal">
@@ -235,84 +234,132 @@
 </header>
 
 <div class="wrapper_main">
-    <div class="stock_main_wrapper">
+    <div class="cabinet_main_wrapper">
         <div class="goods_left_main_breadcrumbs">
-            <p><a href="index.html">Главная</a>/<a href="stock.html">Акции</a></p>
+            <p><a href="index.html">Главная</a>/<a href="cabinet.html">Личный кабинет</a></p>
         </div>
-        <div class="stock_main_wrapper_block">
-            <div class="wrapper_stock_slide_block">
-                <div class="stock_item">
-                    <div class="stock_block">
-                        <p class="discount">-15%</p>
-
-                        <!-- <div class="description">  -->
-                        <div class="promotion_product">
-                            <p>Пианино</p>
-                            <p>YAMAHA YUS1</p>
-                            <img src="assets/img/index_page/Слой_7.png" alt="">
-                        </div>
-
-                        <div class="goods_price">
-                            <p class="old_price">63000</p>
-                            <p class="price_at_the_discount">40000</p>
-                            <a class="add_to_basket" href="#">В корзину</a>
-                            <a class="all_promotion" href="#">Все акции</a>
-                            <p class="list">
-                                &#60;
-                                <span class="number_page">1</span>
-                                /
-                                <span class="last_page">3</span>
-                                &#62;
-                            </p>
-                        </div>
-
-                        <div class="promotion_information">
-                            <h3>Акция к 1 сентября!</h3>
+        <div class="cabinet_main_wrapper_block">
+            <div class="cab_left">
+                <div class="my_orders left_item">
+                    <div><img src="assets/img/icons/shopping-basket.png" alt=""></div>
+                    <p>Мои заказы</p></div>
+                <div class="my_data left_item">
+                    <div><img src="assets/img/icons/file.png" alt=""></div>
+                    <p>Мои данные</p></div>
+            </div>
+            <div class="line"></div>
+            <div class="cab_right">
+                <div class="order_tab cab_tab active">
+                    <div class="card_blocks_title">
+                        <div class="line"></div>
+                        <h3>Оформление заказа</h3>
+                        <div class="line"></div>
+                    </div>
+                    <div class="order_content">
+                        <div class="order_item_wrapper">
+                            <div class="order_item_inner">
+                                <div class="order_item_side">
+                                    <div class="order_item_side_img"><img src="assets/img/icons/order_item_img.png"
+                                                                          alt=""></div>
+                                    <div class="order_item_side_content">
+                                        <p class="order_item_side_name">Casio CTK-3500</p>
+                                        <p>синтезатор / арт. 2312343</p>
+                                    </div>
+                                </div>
+                                <div class="order_item_count"><p>1 шт.</p></div>
+                                <div class="order_item_price">
+                                    <div class="order_item_price_old"><p>40 000<span>&#8381;</span></p></div>
+                                    <div class="price_at_the_discount"><p>40 000<span>&#8381;</span></p></div>
+                                </div>
+                            </div>
                             <div class="line"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis eros orci.
-                                Quisque
-                                vitae nisi odio.</p>
-                            <p>Yamaha YUS1 обладает выдающимися музыкальными характеристиками и оправдывает самые
-                                высокие
-                                ожидания, благодаря фирменному качеству Yamaha.</p>
                         </div>
-                        <!-- </div>-->
+                        <div class="reg_order_wrapper">
+                            <form action="" class="reg_order_left">
+                                <input type="text" placeholder="Фамилия">
+                                <input type="text" placeholder="Имя">
+                                <input type="text" placeholder="Отчество">
+                                <input type="tel" placeholder="Телефон">
+                                <div class="order_place"><p>Населённый пункт: <span class="country">Москва <img
+                                        src="assets/img/icons/next.png" alt=""></span></p></div>
+                                <input type="tel" placeholder="Адрес">
+                                <div class="email_example"><p>E-mail: <span>example@mail.ru</span></p></div>
+                            </form>
+                            <div class="reg_order_right">
+                                <div class="left_col">
+                                    <div class="delivery_way">
+                                        <p class="order_col_title">Способ доставки:</p>
+                                        <p><input name="delivery_way" type="radio" id="auto"><label
+                                                for="auto">Автотранспорт</label></p>
+                                        <p><input name="delivery_way" type="radio" id="train"><label for="train">Ж/Д
+                                            транспорт</label></p>
+                                        <p><input name="delivery_way" type="radio" id="fly"><label
+                                                for="fly">Авиатранспорт</label></p>
+                                    </div>
+                                    <div class="getting_way">
+                                        <p class="order_col_title">Способ получения:</p>
+                                        <p><input name="getting_way" type="radio" id="door"><label for="door">Доставка
+                                            до
+                                            двери</label></p>
+                                        <p><input name="getting_way" type="radio" id="self"><label
+                                                for="self">Самовывоз</label></p>
+                                        <p><input name="getting_way" type="radio" id="courier"><label for="courier">Курьерская
+                                            доставка</label></p>
+                                    </div>
+                                </div>
+                                <div class="payment_way">
+                                    <p class="order_col_title">Способ оплаты:</p>
+                                    <p><input name="payment_way" type="radio" id="online"><label
+                                            for="online">Онлайн</label>
+                                    </p>
+                                    <p><input name="payment_way" type="radio" id="cash_office"><label for="cash_office">Наличными
+                                        в офисе</label></p>
+                                    <p><input name="payment_way" type="radio" id="cash_courier"><label
+                                            for="cash_courier">Наличными
+                                        курьеру</label></p>
+                                    <p><input name="payment_way" type="radio" id="bank"><label for="bank">Оплата через
+                                        банк</label></p>
+                                    <p><input name="payment_way" type="radio" id="credit"><label for="credit">Кредит/рассрочка</label>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payment_continue">
+                        <button>Продолжить</button>
+                    </div>
 
-                    </div>
                 </div>
-                <div class="stock_item" >
-                    <div class="stock_block">
-                        <div class="stock_image">
-                            <img src="assets/img/icons/banner_image_stock.png" alt="">
-                        </div>
-                        <div class="stock_right">
-                            <div class="promotion_information">
-                                <h3>Получи скидку в честь открытия<br>
-                                    «FonoMono.ru»!</h3>
-                                <div class="line"></div>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Maecenas quis eros orci.
-                                Quisque vitae nisi odio.</p>
-                            <a href="#">Все акции</a>
-                        </div>
+                <div class="user_data_tab cab_tab">
+                    <div class="card_blocks_title">
+                        <div class="line"></div>
+                        <h3>Ваши данные</h3>
+                        <div class="line"></div>
                     </div>
-                </div>
-                <div class="stock_item">
-                    <div class="stock_block">
-                        <div class="stock_image">
-                            <img src="assets/img/icons/banner_image_stock2.png" alt="">
+                    <form class="data_content">
+                        <div class="data_content_left">
+                            <input type="text" placeholder="Фамилия">
+                            <input type="text" placeholder="Имя">
+                            <input type="text" placeholder="Отчество">
+                            <input type="tel" placeholder="Телефон">
+                            <p>E-mail: <span>example@mail.ru</span></p>
+                            <button class="change_pasword">Сменить пароль</button>
+                            <button class="save_data" type="submit">Сохранить</button>
                         </div>
-                        <div class="stock_right stock_right_blue">
-                            <div class="promotion_information">
-                                <h3>Получи скидку в честь открытия<br>
-                                    «FonoMono.ru»!</h3>
-                                <div class="line"></div>
+                        <div class="data_content_right">
+                            <div class="birthday_sex">
+                                <p>Дата рождения:</p>
+                                <input type='text' class="datepicker-here" data-position="left top"
+                                       placeholder="День/Месяц/Год"/>
+                                <p class="sex_title">Пол:</p>
+                                <div class="change_sex">
+                                    <input type="radio" placeholder="Мужской" value="male" name="sex" id="male"><label
+                                        class="sex" for="male">Мужской</label>
+                                    <input type="radio" placeholder="Женский" value="female" name="sex"
+                                           id="female"><label class="sex" for="female">Женский</label></div>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Maecenas quis eros orci.
-                                Quisque vitae nisi odio.</p>
-                            <a href="#">Все акции</a>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -436,7 +483,9 @@
     </div>
 </footer>
 <script src="assets/js/jquery-1.11.0.min.js"></script>
-<script src="slick/slick.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="assets/js/date.js"></script>
 <script src="assets/js/script.js"></script>
+
 </body>
 </html>

@@ -16,8 +16,7 @@
           rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-
-
+    <link rel="stylesheet" href="assets/css/date.css">
 </head>
 <body>
 <div class="modal">
@@ -235,84 +234,132 @@
 </header>
 
 <div class="wrapper_main">
-    <div class="stock_main_wrapper">
+    <div class="cabinet_main_wrapper">
         <div class="goods_left_main_breadcrumbs">
-            <p><a href="index.html">Главная</a>/<a href="stock.html">Акции</a></p>
+            <p><a href="index.html">Главная</a>/<a href="cabinet.html">Личный кабинет</a></p>
         </div>
-        <div class="stock_main_wrapper_block">
-            <div class="wrapper_stock_slide_block">
-                <div class="stock_item">
-                    <div class="stock_block">
-                        <p class="discount">-15%</p>
-
-                        <!-- <div class="description">  -->
-                        <div class="promotion_product">
-                            <p>Пианино</p>
-                            <p>YAMAHA YUS1</p>
-                            <img src="assets/img/index_page/Слой_7.png" alt="">
-                        </div>
-
-                        <div class="goods_price">
-                            <p class="old_price">63000</p>
-                            <p class="price_at_the_discount">40000</p>
-                            <a class="add_to_basket" href="#">В корзину</a>
-                            <a class="all_promotion" href="#">Все акции</a>
-                            <p class="list">
-                                &#60;
-                                <span class="number_page">1</span>
-                                /
-                                <span class="last_page">3</span>
-                                &#62;
-                            </p>
-                        </div>
-
-                        <div class="promotion_information">
-                            <h3>Акция к 1 сентября!</h3>
-                            <div class="line"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis eros orci.
-                                Quisque
-                                vitae nisi odio.</p>
-                            <p>Yamaha YUS1 обладает выдающимися музыкальными характеристиками и оправдывает самые
-                                высокие
-                                ожидания, благодаря фирменному качеству Yamaha.</p>
-                        </div>
-                        <!-- </div>-->
-
+        <div class="cabinet_main_wrapper_block">
+            <div class="cab_left">
+                <div class="my_orders left_item">
+                    <div><img src="assets/img/icons/shopping-basket.png" alt=""></div>
+                    <p>Мои заказы</p></div>
+                <div class="my_data left_item">
+                    <div><img src="assets/img/icons/file.png" alt=""></div>
+                    <p>Мои данные</p></div>
+            </div>
+            <div class="line"></div>
+            <div class="cab_right">
+                <div class="order_tab cab_tab active">
+                    <div class="card_blocks_title">
+                        <div class="line"></div>
+                        <h3>Ваши заказы</h3>
+                        <div class="line"></div>
                     </div>
-                </div>
-                <div class="stock_item" >
-                    <div class="stock_block">
-                        <div class="stock_image">
-                            <img src="assets/img/icons/banner_image_stock.png" alt="">
-                        </div>
-                        <div class="stock_right">
-                            <div class="promotion_information">
-                                <h3>Получи скидку в честь открытия<br>
-                                    «FonoMono.ru»!</h3>
+                    <div class="order_content">
+                        <div class="orders_wrapper">
+                            <div class="orders_header">
+                                <div class="orders_header_inner">
+                                    <p class="orders_count"><span class="orders_count_num">3</span> товара</p>
+                                    <p class="orders_count_col">количество</p>
+                                    <p class="orders_cost_col">стоимость</p>
+                                </div>
                                 <div class="line"></div>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Maecenas quis eros orci.
-                                Quisque vitae nisi odio.</p>
-                            <a href="#">Все акции</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="stock_item">
-                    <div class="stock_block">
-                        <div class="stock_image">
-                            <img src="assets/img/icons/banner_image_stock2.png" alt="">
-                        </div>
-                        <div class="stock_right stock_right_blue">
-                            <div class="promotion_information">
-                                <h3>Получи скидку в честь открытия<br>
-                                    «FonoMono.ru»!</h3>
+                            <div class="order_item_wrapper">
+                                <div class="order_item_inner">
+                                    <div class="order_item_side">
+                                        <div class="order_item_side_img"><img src="assets/img/icons/order_item_img.png"
+                                                                              alt=""></div>
+                                        <div class="order_item_side_content">
+                                            <p class="order_item_side_name">Casio CTK-3500</p>
+                                            <p>синтезатор / арт. 2312343</p>
+                                        </div>
+                                    </div>
+                                    <div class="order_item_count"><p>1 шт.</p></div>
+                                    <div class="order_item_price">
+                                        <div class="order_item_price_old"><p>40 000<span>&#8381;</span></p></div>
+                                        <div class="price_at_the_discount"><p>40 000<span>&#8381;</span></p></div>
+                                    </div>
+                                </div>
                                 <div class="line"></div>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Maecenas quis eros orci.
-                                Quisque vitae nisi odio.</p>
-                            <a href="#">Все акции</a>
+                            <div class="order_item_wrapper">
+                                <div class="order_item_inner">
+                                    <div class="order_item_side">
+                                        <div class="order_item_side_img"><img src="assets/img/icons/order_item_img.png"
+                                                                              alt=""></div>
+                                        <div class="order_item_side_content">
+                                            <p class="order_item_side_name">Casio CTK-3500</p>
+                                            <p>синтезатор / арт. 2312343</p>
+                                        </div>
+                                    </div>
+                                    <div class="order_item_count"><p>1 шт.</p></div>
+                                    <div class="order_item_price">
+                                        <div class="order_item_price_old"><p>40 000<span>&#8381;</span></p></div>
+                                        <div class="price_at_the_discount"><p>40 000<span>&#8381;</span></p></div>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="order_item_wrapper">
+                                <div class="order_item_inner">
+                                    <div class="order_item_side">
+                                        <div class="order_item_side_img"><img src="assets/img/icons/order_item_img.png"
+                                                                              alt=""></div>
+                                        <div class="order_item_side_content">
+                                            <p class="order_item_side_name">Casio CTK-3500</p>
+                                            <p>синтезатор / арт. 2312343</p>
+                                        </div>
+                                    </div>
+                                    <div class="order_item_count"><p>1 шт.</p></div>
+                                    <div class="order_item_price">
+                                        <div class="order_item_price_old"><p>40 000<span>&#8381;</span></p></div>
+                                        <div class="price_at_the_discount"><p>40 000<span>&#8381;</span></p></div>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="order_submit">
+                                <div class="order_submit_price">
+                                    <div class="order_submit_price_old"><p>63 000<span>&#8381;</span></p></div>
+                                    <div class="order_submit_price_discount"><p>40 000<span>&#8381;</span></p></div>
+                                </div>
+                                <div class="order_submit_button"><button>Оформить заказ</button></div>
+                            </div>
                         </div>
                     </div>
+
+                </div>
+                <div class="user_data_tab cab_tab">
+                    <div class="card_blocks_title">
+                        <div class="line"></div>
+                        <h3>Ваши данные</h3>
+                        <div class="line"></div>
+                    </div>
+                    <form class="data_content">
+                        <div class="data_content_left">
+                            <input type="text" placeholder="Фамилия">
+                            <input type="text" placeholder="Имя">
+                            <input type="text" placeholder="Отчество">
+                            <input type="tel" placeholder="Телефон">
+                            <p>E-mail: <span>example@mail.ru</span></p>
+                            <button class="change_pasword">Сменить пароль</button>
+                            <button class="save_data" type="submit">Сохранить</button>
+                        </div>
+                        <div class="data_content_right">
+                            <div class="birthday_sex">
+                                <p>Дата рождения:</p>
+                                <input type='text' class="datepicker-here" data-position="left top"
+                                       placeholder="День/Месяц/Год"/>
+                                <p class="sex_title">Пол:</p>
+                                <div class="change_sex">
+                                    <input type="radio" placeholder="Мужской" value="male" name="sex" id="male"><label
+                                        class="sex" for="male">Мужской</label>
+                                    <input type="radio" placeholder="Женский" value="female" name="sex"
+                                           id="female"><label class="sex" for="female">Женский</label></div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -436,7 +483,9 @@
     </div>
 </footer>
 <script src="assets/js/jquery-1.11.0.min.js"></script>
-<script src="slick/slick.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="assets/js/date.js"></script>
 <script src="assets/js/script.js"></script>
+
 </body>
 </html>
