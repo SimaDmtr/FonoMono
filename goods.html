@@ -314,6 +314,33 @@
                         sollicitudin. Mauris elit lacus, interdum eget pharetra sit amet, egestas
                         in tellus. Phasellus ullamcorper massa sit amet lectus sollicitudin tempor.</p>
                     <button>Помощь в выборе</button>
+                    <div class="form_question">
+                        <div class="question">
+                            <p>У вас есть вопрос?</p>
+                            <p>Мы поможем!</p>
+                        </div>
+
+                        <div class="contacts">
+                            <form action="">
+                                <div>
+                                    <input type="text" placeholder="Ваше имя" required>
+                                    <input id="phone_question" type="text" placeholder="Номер вашего телефона" required>
+                                    <input type="email" placeholder="Ваш e-mail" required>
+                                </div>
+
+                                <div>
+                                <textarea name='user_question' id='wl_user_question'
+                                          placeholder="Вопрос можно задать в данной форме" required></textarea>
+                                </div>
+
+                                <input id="submit_question" type="submit" name="Отправить">
+                            </form>
+
+                        </div>
+                        <p class="question_accept">Мы с Вами скоро свяжемся</p>
+                        <p class="personal_inform">*нажимая кнопку "Отправить",<br> вы даете свое согласие на обработку
+                            персональных данных. <a href="">Условия политики конфиденциальности.</a></p>
+                    </div>
                 </div>
                 <div class="sort_and_filter">
                     <div class="goods_main_sort">
@@ -6267,6 +6294,7 @@
 </footer>
 <!---->
 <script src="assets/js/jquery-1.11.0.min.js"></script>
+<script src="assets/js/jquery.maskedinput.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="assets/js/script.js"></script>
 </body>
