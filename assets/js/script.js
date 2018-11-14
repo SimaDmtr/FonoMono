@@ -258,6 +258,24 @@ $(document).ready(function () {
 
     }).eq(0).addClass("active");
 
+    //помощь в выборе кнопка
+    $('.goods_main_help_block button').click(function () {
+
+        if ($('.goods_main_help_block .form_question').hasClass("active")) {
+            $('.goods_main_help_block .form_question').removeClass("active").fadeOut();
+
+        } else {
+            $('.goods_main_help_block .form_question').addClass("active").fadeIn();
+
+        }
+    });
+    $(document).mouseup(function (e) {
+        var container = $(".goods_main_help_block .form_question");
+        if (container.has(e.target).length === 0) {
+            container.fadeOut();
+        }
+    });
+
 
     //Фильтр
     if ($(window).width() < 991) {
